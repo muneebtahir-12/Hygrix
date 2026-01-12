@@ -8,7 +8,7 @@ export default function WhyChooseUs() {
     return (
         <section className=" mx-5  sm:mx-10  md:mx-20  lg:mx-32  mt-20  mb-20 flex  flex-col  lg:flex-row  gap-10  items-center ">
             {/* Image */}
-            <img src="/chooseus.pnG" alt="Why choose us" className=" w-[280px] sm:w-[320px] md:w-[380px] lg:w-[450px] xl:w-[520px]" />
+            <img src="/chooseus.png" alt="Why choose us" className=" w-[280px] sm:w-[320px] md:w-[380px] lg:w-[450px] xl:w-[520px]" />
 
 
 

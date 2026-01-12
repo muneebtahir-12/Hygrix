@@ -1,0 +1,127 @@
+{
+   "products": [
+      {
+         "id": 1,
+         "image": "/product.png",
+         "quantity": "01 Bottle",
+         "name": "Hygrix IPA Spray"
+      },
+      {
+         "id": 2,
+         "image": "/product.png",
+         "quantity": "01 Bottle",
+         "name": "Hygrix IPA Spray"
+      },
+      {
+         "id": 3,
+         "image": "/product.png",
+         "quantity": "01 Bottle",
+         "name": "Hygrix IPA Spray"
+      },
+      {
+         "id": 4,
+         "image": "/product.png",
+         "quantity": "01 Bottle",
+         "name": "Hygrix IPA Spray"
+      },
+      {
+         "id": 5,
+         "image": "/product.png",
+         "quantity": "01 Bottle",
+         "name": "Hygrix IPA Spray"
+      }
+   ],
+   "reviews": [
+      {
+         "id": 6,
+         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
+         "image": "/user.png",
+         "name": "carolyn dover",
+         "post": "Designer"
+      },
+      {
+         "id": 7,
+         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
+         "image": "/user.png",
+         "name": "john smith",
+         "post": "Developer"
+      },
+      {
+         "id": 8,
+         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
+         "image": "/user.png",
+         "name": "sara wilson",
+         "post": "Manager"
+      }
+   ],
+   "healthpriorities": [
+      {
+         "id": 9,
+         "image": "/checkups.png",
+         "title": "General Check-up",
+         "description": "We remove the stress and guesswork from healthcare."
+      },
+      {
+         "id": 10,
+         "image": "/checkups.png",
+         "title": "Online Consultation",
+         "description": "Connect with experienced healthcare professionals from the comfort of your home."
+      },
+      {
+         "id": 11,
+         "image": "/checkups.png",
+         "title": "Medicines Delivery",
+         "description": "Get your prescribed medications delivered to your doorstep quickly and safely."
+      },
+      {
+         "id": 12,
+         "image": "/checkups.png",
+         "title": "Diagnostics & Lab Tests",
+         "description": "Convenient and accurate diagnostic services at your fingertips."
+      }
+   ],
+   "reasons": [
+      {
+         "id": 13,
+         "text": " Our team consists of board-certified doctors and specialists,",
+         "point": "Experienced Professionals"
+      },
+      {
+         "id": 14,
+         "text": " We offer a wide range of medical services, from primary care to specialized treatments.",
+         "point": "Comprehensive Services"
+      },
+      {
+         "id": 15,
+         "text": " We prioritize your comfort, preferences, and overall well-being in every aspect of our care.",
+         "point": "Patient-Centered Care"
+      },
+      {
+         "id": 16,
+         "text": " We utilize the latest medical technology and evidence-based practices to ensure accurate diagnoses and effective treatments.",
+         "point": "Advanced Technology"
+      },
+      {
+         "id": 17,
+         "text": " With multiple locations and flexible scheduling options, we make it easy for you to receive the care you need.",
+         "point": "Convenient Access"
+      }
+   ],
+   "success": [
+      {
+         "id": 18,
+         "avg": "95%",
+         "description":"We remove the stress and guesswork from healthcare so you always feel informed supported"
+      },
+      {
+         "id": 19,
+         "avg": "150K+",
+         "description": "Successful Treatments"
+      },
+      {
+         "id": 20,
+         "avg": "20+",
+         "description": "Years of Experience"
+      }
+   ]
+}

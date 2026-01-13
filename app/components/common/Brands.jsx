@@ -1,7 +1,7 @@
 export default function Brands(){
     return(
         <section className="flex gap-3 flex-wrap mx-5 md:mx-20 lg:mx-30 items-center justify-between mt-20 ">
-             <img src="/Brand1.png" alt="" className="w-[74.8px] h-[37.2px]" />
+             <img src="/Brand1.png" alt="Brand logo 1" className="w-[74.8px] h-[37.2px]" />
              <img src="/Brand2.png" alt="" className="w-[141.7px] h-[27.2px]" />
              <img src="/Brand3.png" alt="" className="w-[87px] h-[58px]" />
              <img src="/Brand4.png" alt="" className="w-[148.4px] h-[48.6px]" />

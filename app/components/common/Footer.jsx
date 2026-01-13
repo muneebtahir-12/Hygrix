@@ -2,25 +2,18 @@ export default function Footer() {
     return (
         <section className="bg-[rgba(252,242,229,0.5)]">
             <div className="flex flex-col lg:flex-row items-center justify-between h-auto lg:h-[60vh] px-5 sm:px-10 md:px-20 lg:px-32 py-10 lg:py-0 gap-10 lg:gap-0">
-                
+
                 {/* Left Section */}
                 <div className="flex flex-col items-center lg:items-start space-y-6 lg:space-y-10 w-full lg:w-auto">
                     {/* Brand */}
                     <div className="flex rounded-4xl items-center justify-center w-[120px] h-[48px] bg-[#F37303]">
-                        <div className="px-1.5"><span className="text-white">Hygrix</span></div>
+                        <div className="px-1.5"><span className="text-white font-bold">Hygrix</span></div>
                         <div className="grid flex items-center p-2 grid-cols-3 bg-[#F5F5F5] h-[40px] w-[52px] rounded-r-full">
-                            <span></span>
-                            <span className="w-1.5 h-1.5 bg-[#F37303] rounded-full"></span>
-                            <span></span>
-                            <span className="w-1.5 h-1.5 bg-[#F37303] rounded-full"></span>
-                            <span></span>
-                            <span className="w-1.5 h-1.5 bg-[#F37303] rounded-full"></span>
-                            <span></span>
-                            <span className="w-1.5 h-1.5 bg-[#F37303] rounded-full"></span>
-                            <span></span>
-                            <span className="w-1.5 h-1.5 bg-[#F37303] rounded-full"></span>
-                            <span></span>
-                            <span className="w-1.5 h-1.5 bg-[#F37303] rounded-full"></span>
+                            <span className="w-[8px] h-[8px] mt-1 bg-[#F37303] rounded-full"></span>
+                            <span className="w-[3px] h-[3px] bg-[#F37303] rounded-full"></span>
+                            <span className="w-[6px] h-[6px] mb-1 bg-[#F37303] rounded-full"></span>
+                            <span></span> <span></span><span className="w-1 h-1 relative -top-1 left-2 bg-[#F37303] rounded-full"></span><span></span>
+                            <span className="w-1.5 h-1.5 relative right-1 bg-[#F37303] rounded-full"></span><span></span><span className="w-1 h-1 ml-2 relative left-4 -top-0.5 bg-[#F37303] rounded-full"></span>
                         </div>
                     </div>
 

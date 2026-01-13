@@ -1,14 +1,15 @@
 import Navbar from "../common/Navbar"
 export default function Hero() {
     return (
-        <section className="bg-[#FCF2E580] min-h-[100vh] relative overflow-hidden">
+        <section className="bg-[#FCF2E580] min-h-[100vh] relative overflow-hidden ">
             <Navbar />
 
 
             {/* Center Content */}
-            <div className="flex items-center justify-center min-h-[calc(10vh-120px)] md:min-h-auto px-2 sm:px-4 md:px-8 lg:mx-20 relative z-10">
+            <div className="object-cover h-[82vh]" style={{ backgroundImage: "url('/bg.png'),url('/bg2.png')" }}>
+                <div className="flex items-center justify-center min-h-[calc(10vh-120px)] md:min-h-auto px-2 sm:px-4 md:px-8 lg:mx-20 relative z-10">
 
-                <div className="flex flex-col mx-10 sm:mx-18 md:mx-22 lg:mx-30 items-center justify-center w-full transition-all duration-300">
+                <div className="bg-cover bg-center h-[500px] flex flex-col mx-10 sm:mx-18 md:mx-22 lg:mx-30 items-center justify-center w-full transition-all duration-300 -mt-10 md:-mt-10">
 
                     <div className="relative w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] flex items-center -ml-40 sm:-ml-60 md:-ml-80 justify-center lg:mb-30 transition-all duration-300">
                         <img src="/herobg.png" alt="Healthcare" className="w-full h-full object-contain transition-all duration-300" />
@@ -51,6 +52,7 @@ export default function Hero() {
                     </div>
 
                 </div>
+            </div>
             </div>
         </section>
     )

@@ -111,7 +111,7 @@
       {
          "id": 18,
          "avg": "95%",
-         "description":"We remove the stress and guesswork from healthcare so you always feel informed supported"
+         "description": "We remove the stress and guesswork from healthcare so you always feel informed supported"
       },
       {
          "id": 19,
@@ -122,6 +122,29 @@
          "id": 20,
          "avg": "20+",
          "description": "Years of Experience"
+      }
+   ],
+   "address": [
+      {
+         "id": 21,
+         "image": "/call.png",
+         "name": "Phone",
+         "des": "We remove the stress and guesswork from healthcare.",
+         "contact": "+4321 567 879 098"
+      },
+      {
+         "id": 22,
+         "image": "/sms.png",
+         "name": "Email Address",
+         "des": "We remove the stress and guesswork from healthcare.",
+         "contact": "hello@hygrixsupport.com"
+      },
+      {
+         "id": 23,
+         "image": "/location.png",
+         "name": "Location",
+         "des": "We remove the stress and guesswork from healthcare.",
+         "contact": "KIZAD KHIA 8-18 PO. Box 133685,  UAE"
       }
    ]
 }

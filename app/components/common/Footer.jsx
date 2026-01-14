@@ -1,6 +1,15 @@
 export default function Footer() {
     return (
-        <section className="bg-[rgba(252,242,229,0.5)]">
+        <section
+            className="bg-[rgba(252,242,229,0.5)] relative w-full bg-no-repeat bg-cover"
+            style={{
+                backgroundImage: "url('/footerbg2.png'), url('/footerbg.png')",
+                backgroundPosition: "center top, center 100px", // 1st image top, 2nd image lower
+                backgroundRepeat: "no-repeat, no-repeat",
+                backgroundSize: "cover, cover", // optional
+            }}
+        >
+
             <div className="flex flex-col lg:flex-row items-center justify-between h-auto lg:h-[60vh] px-5 sm:px-10 md:px-20 lg:px-32 py-10 lg:py-0 gap-10 lg:gap-0">
 
                 {/* Left Section */}

@@ -52,7 +52,35 @@
          "image": "/user.png",
          "name": "sara wilson",
          "post": "Manager"
+      },{
+         "id": 1,
+         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
+         "image": "/user.png",
+         "name": "sara wilson",
+         "post": "Manager"
+      },{
+         "id": 2,
+         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
+         "image": "/user.png",
+         "name": "sara wilson",
+         "post": "Manager"
+      },{
+         "id": 3,
+         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
+         "image": "/user.png",
+         "name": "sara wilson",
+         "post": "Manager"
+      },
+      {
+         "id": 4,
+         "description": "Lore refers to the body of traditional knowledge, stories, and beliefs passed down within a culture or group, often orally, covering subjects like folklore, history, or a fictional universe's backstory.",
+         "image": "/user.png",
+         "name": "sara wilson",
+         "post": "Manager"
       }
+      
+      
+      
    ],
    "healthpriorities": [
       {

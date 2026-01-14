@@ -9,7 +9,7 @@ export default function Products() {
                 <Button />
                 <h3 className="text-[#171717] text-center font-aeonik text-[32px] sm:text-[38px] md:text-[42px] font-normal">Simplified You Can Focus on Living</h3>
             </div>
-            <div className="grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
                 {products.map((product) => (
                     <ProductCard
                         key={product.id}

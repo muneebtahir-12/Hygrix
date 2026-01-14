@@ -2,31 +2,26 @@ import NavBar from "../components/common/Navbar";
 
 export default function ContactPage() {
     return (
-        // Added the background color here to cover the entire top/navbar area
-        <section className="min-h-screen w-full bg-white">
-            {/* Wrapper for the colored top section */}
-            <div className="bg-[#FEF6EF] h-[100vh] w-full pb-20 lg:pb-32 ">
-                <NavBar />
 
-                {/* Hero */}
-                <div className="relative flex flex-col md:flex-row items-center justify-center pt-10 lg:pt-0 lg:right-30">
-                    <img
-                        src="/herobg.png"
-                        alt=""
-                        className="w-[180px] md:w-[230px] relative lg:top-29 z-1"
-                    />
-                    <h2 className="font-aeonik font-normal mt-10 text-[30px] md:text-[42px] leading-[1.1] tracking-normal text-center px-5">
+        <section className="mb-10">
+
+            <div className="bg-[#FEF6EF] h-[100vh] w-full overflow-hidden" style={{
+            backgroundImage: "url('/addressbg.png')", backgroundPosition: "center 140px"}}>
+                <NavBar />
+                <div className="relative flex flex-col-reverse md:flex-row items-center justify-center pt-10 lg:pt-0 lg:right-25">
+                    <img src="/herobg.png" alt="" className="w-[180px] md:w-[230px] relative right-10 sm:right-39 md:top-29  md:right-0 z-1" />
+                    <h2 className="font-aeonik font-normal mt-10 text-[30px] md:text-[42px] leading-[1.1] tracking-normal text-center px-5 md:mr-35 lg:mr-0 w-[340px] sm:w-[500px] md:w-auto">
                         Healthcare, Simplified<br className="hidden md:block" /> You Can Focus on Living.
                     </h2>
                 </div>
             </div>
 
-            
-            <div className="max-w-full sm:mx-10 md:mx-20 lg:mx-32 mx-5 -mt-20 md:-mt-24 lg:-mt-73 px-0 flex flex-col">
-                <div className="bg-white rounded-lg  p-6 md:p-10 grid grid-cols-1 lg:grid-cols-2 gap-38 items-start z-10 relative border border-[#d5eee2]">
+
+            <div className="max-w-full sm:mx-10 md:mx-20 lg:mx-32 mx-5 -mt-40 md:-mt-34 lg:-mt-62 px-0 flex flex-col">
+                <div className="bg-white rounded-lg p-6 md:p-10 flex flex-col gap-10 lg:gap-0 lg:flex-row items-center justify-between z-10 relative border border-[#d5eee2]">
 
                     {/* Left: Form */}
-                    <div className="p-2">
+                    <div className="p-2 ">
                         <h2 className="font-aeonik font-normal text-[32px] md:text-[42px] leading-[1] tracking-tight">Contact Us</h2>
                         <p className="font-poppins font-normal text-[14px] md:text-[16px] leading-[1.6] mt-4 text-gray-500 max-w-md">
                             Not sure what you need? The team at Square Events will be happy to listen to you and suggest event ideas you hadn't considered.
@@ -62,41 +57,21 @@ export default function ContactPage() {
                     </div>
 
                     {/* Right: Floating Image Collage */}
-                    <div className="hidden lg:block relative h-[500px] w-full">
+                    <div className="hidden sm:block relative h-[500px] w-[400px] relative left-10">
                         {/* Doctor/Stethoscope (Large top left) */}
-                        <img
-                            src="/HealthTracking2.png"
-                            className="h-[210px] w-[210px]"
-                            alt="Medical professional"
-                        />
+                        <img src="/HealthTracking2.png" className="h-[156px] w-[164px]" alt="Medical professional" />
 
                         {/* Pills Bowl (Top right) */}
-                        <img
-                            src="/HealthTracking4.png"
-                            className="absolute top-8 right-12 h-[130px] h-[145px] rounded-lg shadow-sm"
-                            alt="Supplements"
-                        />
+                        <img src="/HealthTracking4.png" className="absolute top-8 right-15 h-[100px] rounded-lg shadow-sm" alt="Supplements" />
 
                         {/* Handshake (Mid small left) */}
-                        <img
-                            src="/HealthTracking3.png"
-                            className="absolute top-[290px] left- h-[85px] w-[85px] rounded-lg shadow-sm"
-                            alt="Consultation"
-                        />
+                        <img src="/HealthTracking3.png" className="absolute top-60 left-2 h-[70px] w-[70px] rounded-lg shadow-sm" alt="Consultation" />
 
                         {/* Dumbbells (Mid right) */}
-                        <img
-                            src="/HealthTracking4.png"
-                            className="absolute top-[210px] right-11 h-[170px] w-[190px] rounded-lg shadow-sm"
-                            alt="Fitness"
-                        />
+                        <img src="/HealthTracking4.png" className="absolute top-40 right-15 h-[150px] w-[170px] rounded-lg shadow-sm" alt="Fitness" />
 
                         {/* Pills Bowl (Bottom middle) */}
-                        <img
-                            src="/HealthTracking2.png"
-                            className="absolute -bottom-2 left-[65px] w-[130px] h-[130px] rounded-lg shadow-sm"
-                            alt="Supplements"
-                        />
+                        <img src="/HealthTracking2.png" className="absolute bottom-15 left-[65px] w-[120px] h-[120px] rounded-lg shadow-sm" alt="Supplements" />
                     </div>
 
                 </div>

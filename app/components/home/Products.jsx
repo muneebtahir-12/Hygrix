@@ -4,12 +4,12 @@ import ProductCard from "./ProductCard";
 export default function Products() {
     const products = data.products;
     return (
-        <section className="mt-30 mx-5 items-center sm:mx-10 md:mx-20 lg:mx-32 flex flex-col gap-7 md:gap-10  ">
+        <section id="products" className="mt-30 mx-5 items-center sm:mx-10 md:mx-20 lg:mx-32 flex flex-col gap-7 md:gap-10  ">
             <div className="flex gap-3 flex-col items-center">
                 <Button />
                 <h3 className="text-[#171717] text-center font-aeonik text-[32px] sm:text-[38px] md:text-[42px] font-normal">Simplified You Can Focus on Living</h3>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+            <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
                 {products.map((product) => (
                     <ProductCard
                         key={product.id}

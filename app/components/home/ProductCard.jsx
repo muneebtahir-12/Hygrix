@@ -2,17 +2,20 @@ import Link from "next/link";
 
 export default function ProductCard({ image, name, quantity }) {
     return (
-        <div className="w-full bg-[#FBFBFB] p-5 flex flex-col gap-5 rounded-lg shadow-sm">
-            
+        <div className="bg-[#FBFBFB] p-5 flex flex-col gap-5 rounded-lg shadow-sm">
+
             {/* Image Container */}
-            <div className="bg-white p-3 relative flex justify-center items-start h-40 w-full sm:h-44 md:h-48 w-40  lg:w-auto">
-                {/* First Image */}
-                <img  src={image}  alt={name} 
-                    className="h-28 sm:h-32 md:h-36 object-contain relative md:right-1 z-10" 
-                />
-                
-                {/* Second Image overlapping */}
-                <img  src={image}  alt={name}  className="h-28 sm:h-32 md:h-36 object-contain absolute bottom-3 sm:bottom-4 md:bottom-6 left-8 sm:left-9 md:left-9 z-0"/>
+            <div className="bg-white p-3 relative flex justify-center items-center h-40 sm:h-44 md:h-48 w-full">
+                <div className="relative">
+                    {/* First Image */}
+                    <img 
+                        src={image} 
+                        alt={name} 
+                        className="h-28 sm:h-32 md:h-36 object-contain relative z-0" 
+                    />
+                    {/* Second Image overlapping - adjusted positioning for better centering */}
+                    <img  src={image}  alt={name}  className="h-28 sm:h-32 md:h-36 object-contain absolute top-2 left-6 lg:left-4.5 z-10" />
+                </div>
             </div>
 
             {/* Product Info */}

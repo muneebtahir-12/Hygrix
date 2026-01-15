@@ -1,3 +1,9 @@
+import Link from "next/link";
+const navigation = [
+    { text: "Our Products", href: "/#products" }, // Anchor link to ID on home page
+    { text: "Contact Us", href: "/contact" },     // Link to contact page
+    { text: "About", href: "/about" },           // Link to about page
+];
 export default function Footer() {
     return (
         <section
@@ -15,7 +21,7 @@ export default function Footer() {
                 {/* Left Section */}
                 <div className="flex flex-col items-center lg:items-start space-y-6 lg:space-y-10 w-full lg:w-auto">
                     {/* Brand */}
-                    <div className="flex rounded-4xl items-center justify-center w-[120px] h-[48px] bg-[#F37303]">
+                    <Link href="/" className="flex rounded-4xl items-center justify-center w-[120px] h-[48px] bg-[#F37303]">
                         <div className="px-1.5"><span className="text-white font-bold">Hygrix</span></div>
                         <div className="grid flex items-center p-2 grid-cols-3 bg-[#F5F5F5] h-[40px] w-[52px] rounded-r-full">
                             <span className="w-[8px] h-[8px] mt-1 bg-[#F37303] rounded-full"></span>
@@ -24,7 +30,7 @@ export default function Footer() {
                             <span></span> <span></span><span className="w-1 h-1 relative -top-1 left-2 bg-[#F37303] rounded-full"></span><span></span>
                             <span className="w-1.5 h-1.5 relative right-1 bg-[#F37303] rounded-full"></span><span></span><span className="w-1 h-1 ml-2 relative left-4 -top-0.5 bg-[#F37303] rounded-full"></span>
                         </div>
-                    </div>
+                    </Link>
 
                     {/* Email */}
                     <span className="text-[#171717] text-center lg:text-left font-aeonik text-[24px] sm:text-[28px] md:text-[32px] lg:text-[35px] font-normal underline lowercase">
@@ -33,10 +39,12 @@ export default function Footer() {
 
                     {/* Buttons */}
                     <div className="flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4">
-                        {["Our Products", "Contact Us", "About"].map((text) => (
-                            <button key={text} className="px-6 sm:px-8 md:px-10 py-2 sm:py-3 rounded-full border border-[#E1E1E1] bg-white text-[#262626] font-spline-sans text-sm sm:text-base font-medium">
-                                {text}
-                            </button>
+                        {navigation.map((item) => (
+                            <Link key={item.text} href={item.href}>
+                                <button className="px-6 sm:px-8 md:px-10 py-2 sm:py-3 rounded-full border border-[#E1E1E1] bg-white text-[#262626] font-spline-sans text-sm sm:text-base font-medium transition-colors hover:bg-gray-50">
+                                    {item.text}
+                                </button>
+                            </Link>
                         ))}
                     </div>
                 </div>

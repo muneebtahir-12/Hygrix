@@ -15,19 +15,20 @@ export default function Navbar() {
 
   return (
     <nav className="relative">
-      <section className="bg-white shadow-[0_20px_41.1px_0_rgba(0,0,0,0.05)] flex justify-between items-center mx-5 md:mx-20 lg:mx-30 lg:rounded-4xl px-5 py-3 mt-10 z-50 relative">
-        
+      <section
+        className={` bg-white shadow-[0_20px_41.1px_0_rgba(0,0,0,0.05)]  flex justify-between items-center  mx-5 md:mx-20 lg:mx-30  px-5 py-3 mt-10 z-50 relative transition-all duration-300 ${isOpen ? 'rounded-t-4xl rounded-b-none' : 'rounded-4xl'}`}>
+
         {/* Logo Section */}
-        <div className="flex rounded-4xl items-center justify-center w-[120px] h-[48px] bg-[#F37303]">
+        <Link href="/" className="flex rounded-4xl items-center justify-center w-[120px] h-[48px] bg-[#F37303]">
           <div className="px-1.5"><span className="text-white font-bold">Hygrix</span></div>
-          <div className="grid flex items-center p-2 grid-cols-3 bg-[#F5F5F5] h-[40px] w-[52px] rounded-r-full">
+          <div className="grid flex items-center p-2 grid-cols-3 bg-[#F5F5F5] h-[40px] w-[50px] rounded-r-full">
             <span className="w-[8px] h-[8px] mt-1 bg-[#F37303] rounded-full"></span>
             <span className="w-[3px] h-[3px] bg-[#F37303] rounded-full"></span>
             <span className="w-[6px] h-[6px] mb-1 bg-[#F37303] rounded-full"></span>
             <span></span> <span></span><span className="w-1 h-1 relative -top-1 left-2 bg-[#F37303] rounded-full"></span><span></span>
             <span className="w-1.5 h-1.5 relative right-1 bg-[#F37303] rounded-full"></span><span></span><span className="w-1 h-1 ml-2 relative left-4 -top-0.5 bg-[#F37303] rounded-full"></span>
           </div>
-        </div>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden lg:flex gap-6 items-center">
@@ -44,13 +45,13 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Contact Button */}
-        <div className="hidden lg:flex items-center justify-center w-[110px] h-[43px] rounded-[100px] bg-black shadow-[-13px_22px_12.8px_0_rgba(255,255,255,0.25)] cursor-pointer hover:bg-gray-800 transition-all">
+        <Link href="/contact" className="hidden lg:flex items-center justify-center w-[110px] h-[43px] rounded-[100px] bg-black shadow-[-13px_22px_12.8px_0_rgba(255,255,255,0.25)] cursor-pointer hover:bg-gray-800 transition-all">
           <span className="text-white text-sm">Contact Us</span>
-        </div>
+        </Link>
 
         {/* Mobile Menu Toggle */}
-        <button 
-          className="lg:hidden p-2 focus:outline-none" 
+        <button
+          className="lg:hidden p-2 focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? (
@@ -64,13 +65,13 @@ export default function Navbar() {
       {/* Mobile Menu Overlay */}
       <div className={`
         lg:hidden absolute top-full left-0 right-0 mx-5 md:mx-20 lg:mx-30  bg-white shadow-xl overflow-hidden transition-all duration-300 ease-in-out z-40
-        ${isOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"}
+        ${isOpen ? "max-h-[400px] opacity-100 rounded-b-4xl" : "max-h-0 opacity-0"}
       `}>
         <div className="flex flex-col p-6 gap-4 items-center">
           {navLinks.map((link) => (
-            <Link 
-              key={link.name} 
-              href={link.href} 
+            <Link
+              key={link.name}
+              href={link.href}
               onClick={() => setIsOpen(false)}
               className="text-lg font-medium border-b border-gray-100 w-full text-center pb-2"
             >

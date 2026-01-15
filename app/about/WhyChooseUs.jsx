@@ -6,14 +6,12 @@ export default function WhyChooseUs() {
     const reason = data.reasons;
 
     return (
-        <section className=" mx-5  sm:mx-10  md:mx-20  lg:mx-32  mt-20  mb-20 flex  flex-col  lg:flex-row  gap-10  items-center ">
+        <section className=" mx-5 sm:mx-10  md:mx-20  lg:mx-32  mt-20  mb-20 flex  flex-col  lg:flex-row  gap-10  items-center justify-center">
             {/* Image */}
-            <img src="/chooseus.png" alt="Why choose us" className=" w-[280px] sm:w-[320px] md:w-[380px] lg:w-[450px] xl:w-[520px]" />
-
-
+            <img src="/chooseus.png" alt="Why choose us" className=" w-[280px] sm:w-[320px] md:w-[380px] lg:w-[385px] xl:w-[520px]" />
 
             {/* Content */}
-            <div className="flex flex-col gap-6 w-full">
+            <div className="flex flex-col gap-6">
                 <Button />
 
                 <h2 className=" font-aeonik  font-normal  text-3xl  sm:text-4xl  md:text-[42px]  leading-tight lg:text-left"> Why Choose Our <br className="hidden lg:block" /> Medical Care?  </h2>

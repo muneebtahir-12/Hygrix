@@ -1,99 +1,164 @@
+"use client"
+
 import Button from "./FeaturesButon"
 import Link from "next/link"
+import { motion } from "framer-motion"
+
+// Variants
+const fadeUp = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { duration: 0.6, ease: "easeOut" } 
+  },
+}
+
+const staggerContainer = {
+    hidden: { opacity: 0 },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.15,
+        },
+    },
+}
+
 export default function HealthTracking() {
     return (
         <section className="flex flex-col gap-15 sm:mx-10 md:mx-20 lg:mx-32 mx-5">
 
-            <div className="flex flex-col gap-3 items-center justify-center mt-20">
-                <Button />
-                <h2 className="text-[#171717] text-center font-aeonik text-[32px] sm:text-[38px] md:text-[42px] font-normal">Simplified You Can Focus on Living</h2>
-                <p className="text-[#171717] text-center text-base font-normal max-w-2xl">We remove the stress and guesswork from healthcare. so you always feel informed, supported. and in control,We remove the stress and guesswork from healthcare. so you always feel informed, supported. and in control,</p>
-            </div>
+            {/* Heading */}
+            <motion.div
+                className="flex flex-col gap-3 items-center justify-center mt-20"
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="visible"
+                // once: false ensures it repeats every time you scroll back
+                // amount: 0.2 ensures it triggers early enough on all screens
+                viewport={{ once: false, amount: 0.2 }}>
+                <motion.div variants={fadeUp}>
+                    <Button />
+                </motion.div>
 
-            <div className="gap-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center">
+                <motion.h2
+                    variants={fadeUp}
+                    className="text-[#171717] text-center font-aeonik text-[32px] sm:text-[38px] md:text-[42px] font-normal">Simplified You Can Focus on Living</motion.h2>
+
+                <motion.p
+                     variants={fadeUp}
+                     className="text-[#171717] text-center text-base font-normal max-w-2xl">We remove the stress and guesswork from healthcare. so you always feel informed, supported, and in control,We remove the stress and guesswork from healthcare. so you always feel informed, supported, and in control.</motion.p>
+            </motion.div>
+
+            {/* Grid */}
+            <motion.div
+                className="gap-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center"
+                variants={staggerContainer}
+                initial="hidden"
+                whileInView="visible"
+                // once: false allows the grid to re-animate when scrolling back down
+                // amount: 0.1 is critical for mobile so the first items animate as soon as they appear
+                viewport={{ once: false, amount: 0.1 }}>
+
                 {/* Image 1 */}
-                <div className="w-full md:max-w-[270px] h-[340px] mx-auto bg-white rounded-[30px] overflow-hidden">
+                <motion.div
+                    variants={fadeUp}
+                    whileHover={{scale:1.05 }}
+                    className="w-full h-[340px] mx-auto bg-white rounded-[30px] overflow-hidden">
                     <img src="/HealthTracking1.png" alt="" className="w-full h-full object-cover" />
-                </div>
+                </motion.div>
 
                 {/* Card 1 */}
-                <div className="w-full md:max-w-[270px] h-[340px] bg-[#FFE4CF] rounded-[30px] flex flex-col p-5 justify-between mx-auto">
-                    <h3 className="text-[#171717] font-aeonik text-[24px] font-normal leading-normal">
+                <motion.div
+                    variants={fadeUp}
+                    whileHover={{scale:1.05 }}
+                    className="w-full h-[340px] bg-[#FFE4CF] rounded-[30px] flex flex-col p-5 justify-between mx-auto">
+                    <h3 className="text-[#171717] font-aeonik text-[24px] font-normal">
                         Smart Health <br /> Tracking
                     </h3>
                     <div className="flex flex-col gap-5">
-                        <p className="text-[#171717] font-poppins text-[13px] font-normal leading-normal">
-                            We remove the stress and guesswork from healthcare. So you always feel informed, supported, and in control.
-                        </p>
-                        <Link className="text-[#171717] font-poppins text-[13px] font-normal leading-normal underline" href="#">
-                            More Information
-                        </Link>
+                        <p className="text-[#171717] font-poppins text-[13px] font-normal"> We remove the stress and guesswork from healthcare. So you always feel informed, supported, and in control.</p>
+                        <Link href="#" className="underline text-[13px]">More Information</Link>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Image 2 */}
-                <div className="w-full md:max-w-[270px] h-[340px] mx-auto bg-white rounded-[30px] overflow-hidden">
+                <motion.div
+                    variants={fadeUp}
+                    whileHover={{scale:1.05 }}
+                    className="w-full h-[340px] mx-auto bg-white rounded-[30px] overflow-hidden">
                     <img src="/HealthTracking2.png" alt="" className="w-full h-full object-cover" />
-                </div>
+                </motion.div>
 
                 {/* Card 2 */}
-                <div className="w-full md:max-w-[270px] h-[340px] bg-[#FFE4CF] rounded-[30px] flex flex-col p-5 justify-between mx-auto">
-                    <h3 className="text-[#171717] font-aeonik text-[24px] font-normal leading-normal">
-                        Smart Health <br /> Tracking
-                    </h3>
+                <motion.div
+                    variants={fadeUp}
+                    whileHover={{scale:1.05 }}
+                    className="w-full h-[340px] bg-[#FFE4CF] rounded-[30px] flex flex-col p-5 justify-between mx-auto">
+                    <h3 className="text-[#171717] font-aeonik text-[24px] font-normal">Smart Health <br /> Tracking</h3>
                     <div className="flex flex-col gap-5">
-                        <p className="text-[#171717] font-poppins text-[13px] font-normal leading-normal">
-                            We remove the stress and guesswork from healthcare. So you always feel informed, supported, and in control.
-                        </p>
-                        <Link className="text-[#171717] font-poppins text-[13px] font-normal leading-normal underline" href="#">
-                            More Information
-                        </Link>
+                        <p className="text-[#171717] font-poppins text-[13px] font-normal">We remove the stress and guesswork from healthcare. So you always feel informed, supported, and in control.</p>
+                        <Link href="#" className="underline text-[13px]">More Information</Link>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Card 3 */}
-                <div className="w-full md:max-w-[270px] h-[340px] bg-[#FFE4CF] rounded-[30px] flex flex-col p-5 justify-between mx-auto">
-                    <h3 className="text-[#171717] font-aeonik text-[24px] font-normal leading-normal">
+                <motion.div
+                    variants={fadeUp}
+                    whileHover={{scale:1.05 }}
+                    className="w-full h-[340px] bg-[#FFE4CF] rounded-[30px] flex flex-col p-5 justify-between mx-auto"
+                >
+                    <h3 className="text-[#171717] font-aeonik text-[24px] font-normal">
                         Smart Health <br /> Tracking
                     </h3>
                     <div className="flex flex-col gap-5">
-                        <p className="text-[#171717] font-poppins text-[13px] font-normal leading-normal">
+                        <p className="text-[#171717] font-poppins text-[13px] font-normal">
                             We remove the stress and guesswork from healthcare. So you always feel informed, supported, and in control.
                         </p>
-                        <Link className="text-[#171717] font-poppins text-[13px] font-normal leading-normal underline" href="#">
+                        <Link href="#" className="underline text-[13px]">
                             More Information
                         </Link>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Image 3 */}
-                <div className="w-full md:max-w-[270px] h-[340px] mx-auto bg-white rounded-[30px] overflow-hidden">
+                <motion.div
+                    variants={fadeUp}
+                    whileHover={{scale:1.05 }}
+                    className="w-full h-[340px] mx-auto bg-white rounded-[30px] overflow-hidden"
+                >
                     <img src="/HealthTracking3.png" alt="" className="w-full h-full object-cover" />
-                </div>
+                </motion.div>
 
                 {/* Card 4 */}
-                <div className="w-full md:max-w-[270px] h-[340px] bg-[#FFE4CF] rounded-[30px] flex flex-col p-5 justify-between mx-auto">
-                    <h3 className="text-[#171717] font-aeonik text-[24px] font-normal leading-normal">
+                <motion.div
+                    variants={fadeUp}
+                    whileHover={{scale:1.05 }}
+                    className="w-full h-[340px] bg-[#FFE4CF] rounded-[30px] flex flex-col p-5 justify-between mx-auto"
+                >
+                    <h3 className="text-[#171717] font-aeonik text-[24px] font-normal">
                         Smart Health <br /> Tracking
                     </h3>
                     <div className="flex flex-col gap-5">
-                        <p className="text-[#171717] font-poppins text-[13px] font-normal leading-normal">
+                        <p className="text-[#171717] font-poppins text-[13px] font-normal">
                             We remove the stress and guesswork from healthcare. So you always feel informed, supported, and in control.
                         </p>
-                        <Link className="text-[#171717] font-poppins text-[13px] font-normal leading-normal underline" href="#">
+                        <Link href="#" className="underline text-[13px]">
                             More Information
                         </Link>
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Image 4 */}
-                <div className="w-full md:max-w-[270px] h-[340px] mx-auto bg-white rounded-[30px] overflow-hidden">
+                <motion.div
+                    variants={fadeUp}
+                    whileHover={{scale:1.05 }}
+                    className="w-full h-[340px] mx-auto bg-white rounded-[30px] overflow-hidden"
+                >
                     <img src="/HealthTracking4.png" alt="" className="w-full h-full object-cover" />
-                </div>
-            </div>
+                </motion.div>
 
-
-
+            </motion.div>
         </section>
     )
 }

@@ -11,11 +11,11 @@ const brands = [
 
 export default function Brands() {
   return (
-    <section className="mt-5 overflow-hidden py-10 sm:mx-10 md:mx-20 lg:mx-32 mx-15">
+    <section className="mt-5 text-center justify-center overflow-hidden py-10 sm:mx-10 md:mx-20 lg:mx-32 mx-15">
       <div className="animate-marquee">
         {/* We map the list twice to create the infinite loop effect */}
-        {[...brands, ...brands].map((brand, index) => (
-          <div key={index} className="flex items-center justify-center mx-5 shrink-0">
+        {[...brands, ...brands,...brands,...brands].map((brand, index) => (
+          <div key={index} className="flex items-center justify-between mx-5 shrink-0">
             <img 
               src={brand.src} 
               alt={brand.alt} 

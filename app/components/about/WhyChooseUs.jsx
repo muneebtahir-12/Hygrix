@@ -56,7 +56,7 @@ export default function WhyChooseUs() {
             {/* Image */}
             <motion.div
                 className="w-full lg:w-1/2 flex justify-center"
-                variants={fadeLeft}
+                // variants={fadeLeft}
                 whileHover={{
                     scale:1.01
                 }}

@@ -1,7 +1,7 @@
 "use client"
 
 import Button from "./FeaturesButon"
-import { motion, useScroll, useTransform, useReducedMotion } from "framer-motion"
+import { motion } from "motion/react"
 
 // Variants
 const fadeUp = {
@@ -30,16 +30,14 @@ export default function RedefineHealthCare() {
         <Button />
         <motion.h3
           variants={fadeUp}
-          className="text-[#171717] font-aeonik text-[32px] sm:text-[33px] md:text-[35px] lg:text-[42px] font-normal md:w-[400px] lg:w-auto"
+          className="text-[#171717] font-aeonik text-3xl sm:text-3xl md:text-4xl lg:text-4xl font-normal md:w-100 lg:w-auto"
         >
           Redefining Healthcare <br /> Clearer, Kinder, Smarter
         </motion.h3>
       </motion.div>
 
       {/* Image */}
-      <div>
-        <img src="/define.png" alt="Redefining Healthcare" className="w-full h-auto object-contain" />
-      </div>
+      {/* <p className="w-[450px] text-[#171717] text-sm ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe eveniet pariatur, explicabo fugiat sed laboriosam cum. Error, exercitationem? Quasi numquam nemo ea totam magni temporibus sunt! Asperiores maiores at totam natus veritatis perspiciatis ducimus in. Quam iusto aut illo tempora asperiores? Mollitia ex perferendis, vitae fuga et laboriosam quia nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit autem at cumque quae porro consequatur corrupti reprehenderit provident voluptates maxime eius animi nulla inventore vel laudantium ducimus quibusdam mollitia libero, perferendis hic. Unde iusto pariatur dolore nostrum quos, facilis, impedit architecto quod, accusantium possimus ex iure aspernatur laborum officiis sint? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor commodi amet eaque exercitationem laborum repellat temporibus quae maiores, labore ab ad non eius quam, itaque quaerat sequi dignissimos nam doloremque voluptas reiciendis. Vel, suscipit dolorum accusantium cupiditate corrupti ex cumque repellendus quibusdam laboriosam earum voluptas ipsum minima officia officiis repudiandae?</p> */}
 
     </section>
   )

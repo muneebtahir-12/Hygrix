@@ -1,6 +1,7 @@
 "use client"
 
-import { motion } from "framer-motion"
+import Image from "next/image"
+import { motion } from "motion/react"
 import ReviewsCard from "./ReviewsCard"
 import ReviewsSlider from "./ReviewSlider"
 import data from "../data/data.json"
@@ -39,15 +40,15 @@ export default function Reviews() {
 
         {/* LEFT CONTENT */}
         <motion.div
-          className="flex flex-col lg:flex-col items-start lg:items-start gap-6 lg:gap-8 lg:w-[35%]"
+          className="flex flex-col lg:flex-col items-start lg:items-start gap-6 lg:gap-8 lg:w-1/3"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
         >
           <motion.div variants={fadeUp} className="flex items-start lg:flex-col gap-4 lg:gap-6">
-            <img src="/colon.png" alt="Colon" className="sm:w-[86px] sm:h-[66px] w-[75px] h-[50px]" />
-            <h3 className="text-[#1C1C1C] font-aeonik sm:text-[32px] text-[28px] font-normal leading-[1] sm:leading-[1.1]">
+            <Image src="/colon.png" alt="Quote icon" width={86} height={66} className="sm:w-20 sm:h-16 w-20 h-12" />
+            <h3 className="text-[#1C1C1C] font-aeonik sm:text-3xl text-2xl font-normal leading-none sm:leading-tight">
               What our customers <br /> are saying
             </h3>
           </motion.div>
@@ -55,11 +56,11 @@ export default function Reviews() {
           {/* CUSTOM ARROWS */}
           <motion.div variants={fadeUp} className="flex gap-5 items-center justify-between w-full lg:w-auto mt-4 lg:mt-6">
             <button className="reviews-prev">
-              <img src="/rightarrow.png" alt="Prev" />
+              <Image src="/rightarrow.png" alt="Previous review" width={19} height={19} />
             </button>
-            <img src="/pagination.png" alt="" />
+            <Image src="/pagination.png" alt="Review pagination dots" width={60} height={10} />
             <button className="reviews-next">
-              <img src="/next1.png" alt="Next" />
+              <Image src="/next1.png" alt="Next review" width={19} height={19} />
             </button>
           </motion.div>
         </motion.div>

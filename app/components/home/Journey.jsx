@@ -1,7 +1,7 @@
 "use client"
 
 import Button from "./FeaturesButon"
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 
 // Variants
 const fadeUp = {
@@ -35,8 +35,8 @@ export default function Journey() {
         {/* Image */}
         <motion.img 
           src="/Journey.png" 
-          alt="Journey"
-          className="lg:w-[400px] w-[350px] h-auto object-contain"
+          alt="Healthcare journey illustration showing 5 simple steps"
+          className="lg:w-100 w-87.5 h-auto object-contain"
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
@@ -68,7 +68,7 @@ export default function Journey() {
           </motion.span>
 
           <motion.div 
-            className="flex items-center justify-center w-[110px] sm:w-[120px] md:w-[133px] h-[40px] sm:h-[42px] md:h-[46px] rounded-full bg-black shadow-[-13px_22px_12.8px_0_rgba(255,255,255,0.25)] cursor-pointer hover:bg-gray-900 transition-all duration-300"
+            className="flex items-center justify-center w-28 sm:w-30 md:w-32 h-10 sm:h-10.5 md:h-11 rounded-full bg-black shadow-[-13px_22px_12.8px_0_rgba(255,255,255,0.25)] cursor-pointer hover:bg-gray-900 transition-all duration-300"
             variants={fadeUp}
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}

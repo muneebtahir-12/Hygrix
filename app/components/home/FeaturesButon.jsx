@@ -1,11 +1,11 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 
 export default function Button() {
   return (
     <motion.div
-      className="bg-[#DCDCDC] gap-1.5 p-2 w-[110px] rounded-4xl flex items-center justify-center cursor-pointer"
+      className="bg-[#DCDCDC] gap-1.5 p-2 w-30 rounded-4xl flex items-center justify-center cursor-pointer"
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, ease: "easeOut" }}

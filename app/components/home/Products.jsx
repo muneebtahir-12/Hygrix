@@ -1,6 +1,6 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 import Button from "./FeaturesButon"
 import data from "../data/data.json"
 import ProductCard from "./ProductCard"
@@ -43,7 +43,7 @@ export default function Products() {
         </motion.div>
 
         <motion.h3 
-          className="text-[#171717] text-center font-aeonik text-[32px] sm:text-[38px] md:text-[42px] font-normal"
+          className="text-[#171717] text-center font-aeonik text-3xl sm:text-4xl md:text-4xl font-normal"
           variants={fadeUp}
         >
           Simplified You Can Focus on Living
@@ -71,7 +71,7 @@ export default function Products() {
 
       {/* View More Button */}
       <motion.div
-        className="flex items-center justify-center w-[110px] sm:w-[120px] md:w-[133px] h-[40px] sm:h-[42px] md:h-[46px] rounded-[100px] bg-black shadow-[-13px_22px_12.8px_0_rgba(255,255,255,0.25)] cursor-pointer hover:bg-gray-900 transition-all duration-300 mt-5"
+        className="flex items-center justify-center w-28 sm:w-30 md:w-32 h-10 sm:h-10.5 md:h-11 rounded-full bg-black shadow-[-13px_22px_12.8px_0_rgba(255,255,255,0.25)] cursor-pointer hover:bg-gray-900 transition-all duration-300 mt-5"
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"

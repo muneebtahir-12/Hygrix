@@ -1,8 +1,9 @@
 "use client"
 
+import Image from "next/image"
 import Button from "./FeaturesButon"
 import Link from "next/link"
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 
 // Variants
 const fadeUp = {
@@ -43,7 +44,7 @@ export default function HealthTracking() {
 
                 <motion.h2
                     variants={fadeUp}
-                    className="text-[#171717] text-center font-aeonik text-[32px] sm:text-[38px] md:text-[42px] font-normal">Simplified You Can Focus on Living</motion.h2>
+                    className="text-[#171717] text-center font-aeonik text-3xl sm:text-4xl md:text-4xl font-normal">Simplified You Can Focus on Living</motion.h2>
 
                 <motion.p
                      variants={fadeUp}
@@ -64,21 +65,21 @@ export default function HealthTracking() {
                 <motion.div
                     variants={fadeUp}
                     whileHover={{scale:1.05 }}
-                    className="w-full h-[340px] mx-auto bg-white rounded-[30px] overflow-hidden">
-                    <img src="/HealthTracking1.png" alt="" className="w-full h-full object-cover" />
+                    className="w-full h-85 mx-auto bg-white rounded-3xl overflow-hidden">
+                    <Image src="/HealthTracking1.png" width={400} height={340} alt="Doctor providing personalized health consultation" className="w-full h-full object-cover" />
                 </motion.div>
 
                 {/* Card 1 */}
                 <motion.div
                     variants={fadeUp}
                     whileHover={{scale:1.05 }}
-                    className="w-full h-[340px] bg-[#FFE4CF] rounded-[30px] flex flex-col p-5 justify-between mx-auto">
-                    <h3 className="text-[#171717] font-aeonik text-[24px] font-normal">
+                    className="w-full h-85 bg-[#FFE4CF] rounded-3xl flex flex-col p-5 justify-between mx-auto">
+                    <h3 className="text-[#171717] font-aeonik text-2xl font-normal">
                         Smart Health <br /> Tracking
                     </h3>
                     <div className="flex flex-col gap-5">
-                        <p className="text-[#171717] font-poppins text-[13px] font-normal"> We remove the stress and guesswork from healthcare. So you always feel informed, supported, and in control.</p>
-                        <Link href="#" className="underline text-[13px]">More Information</Link>
+                        <p className="text-[#171717] font-poppins text-xs font-normal"> We remove the stress and guesswork from healthcare. So you always feel informed, supported, and in control.</p>
+                        <Link href="#" className="underline text-xs">More Information</Link>
                     </div>
                 </motion.div>
 
@@ -86,19 +87,19 @@ export default function HealthTracking() {
                 <motion.div
                     variants={fadeUp}
                     whileHover={{scale:1.05 }}
-                    className="w-full h-[340px] mx-auto bg-white rounded-[30px] overflow-hidden">
-                    <img src="/HealthTracking2.png" alt="" className="w-full h-full object-cover" />
+                    className="w-full h-85 mx-auto bg-white rounded-3xl overflow-hidden">
+                    <Image src="/HealthTracking2.png" width={400} height={340} alt="Medical professional with stethoscope" className="w-full h-full object-cover" />
                 </motion.div>
 
                 {/* Card 2 */}
                 <motion.div
                     variants={fadeUp}
                     whileHover={{scale:1.05 }}
-                    className="w-full h-[340px] bg-[#FFE4CF] rounded-[30px] flex flex-col p-5 justify-between mx-auto">
-                    <h3 className="text-[#171717] font-aeonik text-[24px] font-normal">Smart Health <br /> Tracking</h3>
+                    className="w-full h-85 bg-[#FFE4CF] rounded-3xl flex flex-col p-5 justify-between mx-auto">
+                    <h3 className="text-[#171717] font-aeonik text-2xl font-normal">Smart Health <br /> Tracking</h3>
                     <div className="flex flex-col gap-5">
-                        <p className="text-[#171717] font-poppins text-[13px] font-normal">We remove the stress and guesswork from healthcare. So you always feel informed, supported, and in control.</p>
-                        <Link href="#" className="underline text-[13px]">More Information</Link>
+                        <p className="text-[#171717] font-poppins text-xs font-normal">We remove the stress and guesswork from healthcare. So you always feel informed, supported, and in control.</p>
+                        <Link href="#" className="underline text-xs">More Information</Link>
                     </div>
                 </motion.div>
 
@@ -106,16 +107,16 @@ export default function HealthTracking() {
                 <motion.div
                     variants={fadeUp}
                     whileHover={{scale:1.05 }}
-                    className="w-full h-[340px] bg-[#FFE4CF] rounded-[30px] flex flex-col p-5 justify-between mx-auto"
+                    className="w-full h-85 bg-[#FFE4CF] rounded-3xl flex flex-col p-5 justify-between mx-auto"
                 >
-                    <h3 className="text-[#171717] font-aeonik text-[24px] font-normal">
+                    <h3 className="text-[#171717] font-aeonik text-2xl font-normal">
                         Smart Health <br /> Tracking
                     </h3>
                     <div className="flex flex-col gap-5">
-                        <p className="text-[#171717] font-poppins text-[13px] font-normal">
+                        <p className="text-[#171717] font-poppins text-xs font-normal">
                             We remove the stress and guesswork from healthcare. So you always feel informed, supported, and in control.
                         </p>
-                        <Link href="#" className="underline text-[13px]">
+                        <Link href="#" className="underline text-xs">
                             More Information
                         </Link>
                     </div>
@@ -125,25 +126,25 @@ export default function HealthTracking() {
                 <motion.div
                     variants={fadeUp}
                     whileHover={{scale:1.05 }}
-                    className="w-full h-[340px] mx-auto bg-white rounded-[30px] overflow-hidden"
+                    className="w-full h-85 mx-auto bg-white rounded-3xl overflow-hidden"
                 >
-                    <img src="/HealthTracking3.png" alt="" className="w-full h-full object-cover" />
+                    <Image src="/HealthTracking3.png" width={400} height={340} alt="Virtual healthcare consultation session" className="w-full h-full object-cover" />
                 </motion.div>
 
                 {/* Card 4 */}
                 <motion.div
                     variants={fadeUp}
                     whileHover={{scale:1.05 }}
-                    className="w-full h-[340px] bg-[#FFE4CF] rounded-[30px] flex flex-col p-5 justify-between mx-auto"
+                    className="w-full h-85 bg-[#FFE4CF] rounded-3xl flex flex-col p-5 justify-between mx-auto"
                 >
-                    <h3 className="text-[#171717] font-aeonik text-[24px] font-normal">
+                    <h3 className="text-[#171717] font-aeonik text-2xl font-normal">
                         Smart Health <br /> Tracking
                     </h3>
                     <div className="flex flex-col gap-5">
-                        <p className="text-[#171717] font-poppins text-[13px] font-normal">
+                        <p className="text-[#171717] font-poppins text-xs font-normal">
                             We remove the stress and guesswork from healthcare. So you always feel informed, supported, and in control.
                         </p>
-                        <Link href="#" className="underline text-[13px]">
+                        <Link href="#" className="underline text-xs">
                             More Information
                         </Link>
                     </div>
@@ -153,9 +154,9 @@ export default function HealthTracking() {
                 <motion.div
                     variants={fadeUp}
                     whileHover={{scale:1.05 }}
-                    className="w-full h-[340px] mx-auto bg-white rounded-[30px] overflow-hidden"
+                    className="w-full h-85 mx-auto bg-white rounded-3xl overflow-hidden"
                 >
-                    <img src="/HealthTracking4.png" alt="" className="w-full h-full object-cover" />
+                    <Image src="/HealthTracking4.png" width={400} height={340} alt="Health supplements and vitamins" className="w-full h-full object-cover" />
                 </motion.div>
 
             </motion.div>

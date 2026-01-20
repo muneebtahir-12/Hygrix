@@ -8,7 +8,7 @@ export default function HealthCard({id, image, title, description}) {
             className="rounded-4xl flex flex-col bg-white p-7 justify-center items-center gap-4 h-60"
             whileHover={{ scale: 1.03, y: -5, boxShadow: "0 15px 30px rgba(0,0,0,0.1)" }}
             whileTap={{ scale: 0.98 }}
-            transition={{ type: "spring", stiffness: 300 }}
+            transition={{ type: "spring", stiffness: 0 }}
         >
             <motion.div 
                 className="flex items-center justify-center w-16 h-16 rounded-full bg-[#FFF8F2]"

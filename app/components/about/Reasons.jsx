@@ -16,7 +16,14 @@ export default function ReasonsCard({id, text, point}) {
                 whileHover={{ scale: 1.2, rotate: 360 }}
                 transition={{ duration: 0.4 }}
             >
-                <Image src="/correct.png" alt="Benefit checkmark" width={20} height={20} />
+<div className="w-4 h-4 relative shrink-0">
+  <Image
+    src="/correct.png"
+    alt="Benefit checkmark"
+    fill
+    className="object-contain"
+  />
+</div>
             </motion.div>
             <p className="lg:w-87.5 font-light text-xs leading-none tracking-normal">
                 <span className="font-semibold text-xs leading-none tracking-normal">{point}</span>{text}

@@ -7,6 +7,7 @@ import Products from "./components/home/Products";
 import Reviews from "./components/home/Reviews";
 import Banner from "./components/common/Banner";
 import Footer from "./components/common/Footer";
+import Who from "./components/about/Who";
 export default function Home(){
   return(
     <>

@@ -31,7 +31,7 @@ export default function HealthServices() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
                 >
-                    <div className="mx-auto w-full max-w-[2650px] rounded-3xl overflow-hidden h-full">
+                    <div className="mx-auto w-full  max-w-190 lg:max-w-440  rounded-3xl overflow-hidden h-full">
                         <div className="relative w-full h-full min-h-80 bg-center bg-cover" style={{
                             backgroundImage: "url('/aboutbg.png')",
                         }}>

@@ -66,7 +66,7 @@ export default function WhyChooseUs() {
                     alt="Why choose us" 
                     width={520} 
                     height={520} 
-                    className="w-64 sm:w-72 md:w-80 lg:w-96 xl:w-[520px] h-auto object-contain transition-all duration-300" 
+                    className="w-64 sm:w-72 md:w-80 lg:w-96 xl:w-130 h-auto object-contain transition-all duration-300" 
                 />
             </motion.div>
 

@@ -10,12 +10,32 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-poppins: var(--font-poppins);
+  --font-spline-sans: var(--font-spline-sans);
+  --font-aeonik: var(--font-poppins); /* Using Poppins as fallback for Aeonik */
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+}
+
+/* Custom font utility classes */
+.font-poppins {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.font-spline-sans {
+  font-family: var(--font-spline-sans), sans-serif;
+}
+
+.font-aeonik {
+  font-family: var(--font-poppins), sans-serif; /* Using Poppins as fallback for Aeonik */
+}
+
+.font-Aeonik {
+  font-family: var(--font-poppins), sans-serif; /* Using Poppins as fallback for Aeonik */
 }
 @keyframes marquee {
   0% { transform: translateX(0%); }

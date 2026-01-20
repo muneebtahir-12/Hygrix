@@ -2,7 +2,7 @@
 import Image from "next/image"
 import Button from "../home/FeaturesButon";
 import ReasonsCard from "./Reasons";
-import data from "../components/data/data.json";
+import data from "../../components/data/data.json";
 import { motion } from "motion/react"
 
 const fadeUp = {

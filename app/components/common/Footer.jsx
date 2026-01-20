@@ -1,8 +1,8 @@
 import Link from "next/link";
 const navigation = [
     { text: "Our Products", href: "/#products" }, // Anchor link to ID on home page
-    { text: "Contact Us", href: "/contact" },     // Link to contact page
-    { text: "About", href: "/about" },           // Link to about page
+    { text: "Contact Us", href: "/contactus" },     // Link to contact page
+    { text: "About", href: "/aboutus" },           // Link to about page
 ];
 export default function Footer() {
     return (

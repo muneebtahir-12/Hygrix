@@ -1,6 +1,6 @@
 "use client"
 import HealthCard from "./HealthPriorityCard";
-import data from "../components/data/data.json";
+import data from "../../components/data/data.json";
 import { motion } from "motion/react"
 
 const fadeUp = {

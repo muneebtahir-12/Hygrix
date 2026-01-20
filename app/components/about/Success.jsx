@@ -1,6 +1,6 @@
 "use client";
 import SuccessCard from "./SuccessCard"
-import data from "../components/data/data.json"
+import data from "../../components/data/data.json";
 import { motion } from "motion/react"
 
 const fadeUp = {

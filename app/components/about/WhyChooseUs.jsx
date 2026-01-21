@@ -15,16 +15,6 @@ const fadeUp = {
     },
 }
 
-const fadeLeft = {
-    hidden: { opacity: 0, x: -30, scale: 0.97 },
-    visible: { 
-        opacity: 1, 
-        x: 0, 
-        scale: 1,
-        transition: { duration: 0.6, ease: "easeOut" } 
-    },
-}
-
 const fadeRight = {
     hidden: { opacity: 0, x: 30, scale: 0.97 },
     visible: { 
@@ -56,7 +46,6 @@ export default function WhyChooseUs() {
             {/* Image */}
             <motion.div
                 className="w-full lg:w-1/2 flex justify-center"
-                // variants={fadeLeft}
                 whileHover={{
                     scale:1.01
                 }}

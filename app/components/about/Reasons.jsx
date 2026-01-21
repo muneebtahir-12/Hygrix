@@ -5,7 +5,7 @@ import { motion } from "motion/react"
 export default function ReasonsCard({id, text, point}) {
     return(
         <motion.div 
-            className="flex items-start gap-4"
+            className="flex items-start gap-4 overflow-hidden"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}

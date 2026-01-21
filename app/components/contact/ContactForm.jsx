@@ -97,7 +97,7 @@ export default function Hero() {
                             Contact Us
                         </motion.h2>
                         <motion.p 
-                            className="font-poppins font-normal text-sm md:text-base leading-relaxed mt-4 text-gray-500 max-w-md"
+                            className="font-aeonik font-normal text-sm md:text-base leading-relaxed mt-4 text-gray-500 max-w-md "
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: false }}

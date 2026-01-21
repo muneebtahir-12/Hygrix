@@ -14,7 +14,7 @@ const container = {
 }
 
 const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
+  hidden: { opacity: 0, y: 50 },
   visible: {
     opacity: 1,
     y: 0,
@@ -28,7 +28,7 @@ export default function Who() {
       variants={container}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
+      viewport={{ once: false, amount: 0.2 }}
       className="px-5 sm:px-10 md:px-20 lg:px-32 py-10 sm:py-14 md:py-16 lg:py-20 flex flex-col md:flex-row gap-6 sm:gap-8 md:gap-12 lg:gap-20 xl:gap-32 items-start"
     >
       {/* Left Side */}

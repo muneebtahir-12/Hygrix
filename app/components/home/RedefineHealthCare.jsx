@@ -10,14 +10,14 @@ export default function RedefineHealthCare() {
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.2 }}
         transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
         className="flex flex-col gap-3 sm:gap-4 md:gap-5 w-full md:w-auto md:shrink-0"
       >
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: false, amount: 0.5 }}
           transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
         >
           <Button />
@@ -25,7 +25,7 @@ export default function RedefineHealthCare() {
         <motion.h3
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.6, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
           className="text-[#171717] font-aeonik text-2xl sm:text-3xl md:text-4xl font-normal"
         >
@@ -39,14 +39,14 @@ export default function RedefineHealthCare() {
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: false, amount: 0.2 }}
         transition={{ duration: 0.7, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
         className="w-full md:flex-1 md:mt-10 lg:mt-12"
       >
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
           className="text-gray-700 text-xs sm:text-sm md:text-base leading-relaxed md:leading-loose"
         >
@@ -57,7 +57,7 @@ export default function RedefineHealthCare() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
           className="text-gray-500 text-xs sm:text-sm md:text-base leading-relaxed md:leading-loose mt-3 sm:mt-4"
         >
@@ -70,7 +70,7 @@ export default function RedefineHealthCare() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.5, delay: 0.6, ease: "easeOut" }}
           className="text-gray-400 text-xs sm:text-sm md:text-base leading-relaxed md:leading-loose mt-3 sm:mt-4"
         >
